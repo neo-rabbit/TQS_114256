@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="tqs.start.TqsStackTests" time="0.124" tests="8" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="tqs.start.TqsStackTests" time="0.113" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PT"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/neorabbit/UA/TQS/TQS_114256/lab1/lab1_1/unit/target/surefire/surefirebooter-20250214122038043_3.jar /home/neorabbit/UA/TQS/TQS_114256/lab1/lab1_1/unit/target/surefire 2025-02-14T12-20-37_951-jvmRun1 surefire-20250214122038043_1tmp surefire_0-20250214122038043_2tmp"/>
+    <property name="sun.java.command" value="/home/neorabbit/UA/TQS/TQS_114256/lab1/lab1_1/unit/target/surefire/surefirebooter-20250217135108622_3.jar /home/neorabbit/UA/TQS/TQS_114256/lab1/lab1_1/unit/target/surefire 2025-02-17T13-51-08_462-jvmRun1 surefire-20250217135108622_1tmp surefire_0-20250217135108622_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/neorabbit/UA/TQS/TQS_114256/lab1/lab1_1/unit/target/test-classes:/home/neorabbit/UA/TQS/TQS_114256/lab1/lab1_1/unit/target/classes:/home/neorabbit/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/home/neorabbit/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/home/neorabbit/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/neorabbit/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/home/neorabbit/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/neorabbit/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/home/neorabbit/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/home/neorabbit/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/neorabbit/UA/TQS/TQS_114256/lab1/lab1_1/unit/target/surefire/surefirebooter-20250214122038043_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/neorabbit/UA/TQS/TQS_114256/lab1/lab1_1/unit/target/surefire/surefirebooter-20250217135108622_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.6+7-Ubuntu-122.04.1"/>
     <property name="user.name" value="neorabbit"/>
@@ -53,54 +53,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testStackPushPop" classname="tqs.start.TqsStackTests" time="0.032"/>
-  <testcase name="testStackSizeNotEmpty" classname="tqs.start.TqsStackTests" time="0.001"/>
-  <testcase name="testStackPushPopMultiple" classname="tqs.start.TqsStackTests" time="0.001"/>
-  <testcase name="testStackPeekEmptyException" classname="tqs.start.TqsStackTests" time="0.004">
-    <failure message="Unexpected exception type thrown, expected: &lt;java.util.NoSuchElementException&gt; but was: &lt;java.lang.IndexOutOfBoundsException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.util.NoSuchElementException> but was: <java.lang.IndexOutOfBoundsException>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
-	at tqs.start.TqsStackTests.testStackPeekEmptyException(TqsStackTests.java:71)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
-	at java.base/java.util.Objects.checkIndex(Objects.java:385)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at tqs.start.TqsStack.peek(TqsStack.java:16)
-	at tqs.start.TqsStackTests.lambda$1(TqsStackTests.java:71)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
-	... 6 more
-]]></failure>
-  </testcase>
-  <testcase name="testStackSizeOnConstruction" classname="tqs.start.TqsStackTests" time="0.001"/>
-  <testcase name="testStackEmptyOnConstruction" classname="tqs.start.TqsStackTests" time="0.001"/>
-  <testcase name="testStackPushPeek" classname="tqs.start.TqsStackTests" time="0.0"/>
-  <testcase name="testStackPopEmptyException" classname="tqs.start.TqsStackTests" time="0.013">
-    <failure message="Unexpected exception type thrown, expected: &lt;java.util.NoSuchElementException&gt; but was: &lt;java.lang.IndexOutOfBoundsException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.util.NoSuchElementException> but was: <java.lang.IndexOutOfBoundsException>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
-	at tqs.start.TqsStackTests.testStackPopEmptyException(TqsStackTests.java:65)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
-	at java.base/java.util.Objects.checkIndex(Objects.java:385)
-	at java.base/java.util.ArrayList.remove(ArrayList.java:551)
-	at tqs.start.TqsStack.pop(TqsStack.java:12)
-	at tqs.start.TqsStackTests.lambda$0(TqsStackTests.java:65)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
-	... 6 more
-]]></failure>
-  </testcase>
+  <testcase name="testStackPushPop" classname="tqs.start.TqsStackTests" time="0.04"/>
+  <testcase name="testStackSizeNotEmpty" classname="tqs.start.TqsStackTests" time="0.002"/>
+  <testcase name="testStackPushPopMultiple" classname="tqs.start.TqsStackTests" time="0.004"/>
+  <testcase name="testStackPeekEmptyException" classname="tqs.start.TqsStackTests" time="0.004"/>
+  <testcase name="testStackSizeOnConstruction" classname="tqs.start.TqsStackTests" time="0.003"/>
+  <testcase name="testStackEmptyOnConstruction" classname="tqs.start.TqsStackTests" time="0.0"/>
+  <testcase name="testStackPushPeek" classname="tqs.start.TqsStackTests" time="0.006"/>
+  <testcase name="testStackPopEmptyException" classname="tqs.start.TqsStackTests" time="0.005"/>
 </testsuite>

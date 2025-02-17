@@ -60,14 +60,12 @@ public class TqsStackTests
         Assertions.assertEquals(0, stack.size());
     }
 
-    @Disabled
     @Test
     void testStackPopEmptyException(){
         TqsStack stack = new TqsStack();
         Assertions.assertThrows(NoSuchElementException.class, () -> stack.pop());
     }
 
-    @Disabled
     @Test
     void testStackPeekEmptyException(){
         TqsStack stack = new TqsStack();
