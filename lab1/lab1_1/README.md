@@ -11,3 +11,5 @@ Testes 7 e 8 disabled:
 6/6 functions
 2/4 branches
 
+# j)
+A função PopIntN vai falhar se n for maior que o tamanho da stack.

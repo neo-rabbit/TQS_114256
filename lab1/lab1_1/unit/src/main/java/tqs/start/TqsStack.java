@@ -7,13 +7,13 @@ public class TqsStack
 {
     private ArrayList<Object> stack = new ArrayList<>();
     public void push(Object obj){
-        stack.add(obj);
+        stack.addFirst(obj);
     }
     public Object pop(){
         if (stack.isEmpty()){
             throw new NoSuchElementException();
         } else {
-        Object obj = stack.remove(0);
+        Object obj = stack.removeFirst();
         return obj;
         }
     }
@@ -30,5 +30,12 @@ public class TqsStack
     }
     public boolean isEmpty(){
         return stack.isEmpty();
+    }
+    public Object popTopN(int n){
+        Object top = null;
+        for (int i = 0; i < n; i++){
+            top = stack.removeFirst();
+        }
+        return top;
     }
 }

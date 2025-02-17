@@ -71,4 +71,18 @@ public class TqsStackTests
         TqsStack stack = new TqsStack();
         Assertions.assertThrows(NoSuchElementException.class, () -> stack.peek());
     }
+
+    @Test
+    void testPopIntN(){
+        TqsStack stack = new TqsStack();
+        stack.push(1);
+        stack.push("a");
+        stack.push("1");
+        Object top = stack.popTopN(0);
+        Assertions.assertEquals(null, top);
+        Assertions.assertEquals(3, stack.size());
+        top = stack.popTopN(3);
+        Assertions.assertEquals(1, top);
+        Assertions.assertEquals(0, stack.size());
+    }
 }
