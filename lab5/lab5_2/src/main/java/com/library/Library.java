@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Library
 {
-    private List<Book> store;
+    private List<Book> store = new LinkedList<>();
 
     public List<Book> findBooksByAuthor(String author){
         List<Book> queryRes = new LinkedList<>();
