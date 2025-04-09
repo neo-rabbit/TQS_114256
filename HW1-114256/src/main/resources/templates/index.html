@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <div th:switch="${facilities}">
+        <h2>Food facilities</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Facility</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="facility : ${facilities}">
+                    <td th:text="${facility.name}"></td>
+                    <td><a th:href="@{/frontend/{id}(id=${facility.id})}">Browse menus</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</html>

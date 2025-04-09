@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <h2 th:text="${facility.name}"></h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Meal</th>
+                <th>Price</th>
+                <th>Schedule</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="meal : ${meals}">
+                <td th:text="${meal.meal}"></td>
+                <td th:text="${meal.price}"></td>
+                <td th:text="${meal.schedule}"></td>
+                <td><a th:href="@{/frontend/booking/{id}(id=${meal.id})}">Make reservation</a></td>
+            </tr>
+        </tbody>
+    </table>
+</html>
